@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "moment": "^2.29.1",
+    "tmi.js": "^1.7.1"
+  }
+}
