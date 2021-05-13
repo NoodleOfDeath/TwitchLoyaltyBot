@@ -154,13 +154,6 @@ addCommand(
     },
   }))
   
-addCommand(
-  new Command('help', {
-    onRun: (channel, tags, args) => {
-      runCommand(channel, tags, pfx('commands'), args)
-    },
-  }))
-  
 function getRaffleData() {
   const raffleData = JSON.parse(fs.readFileSync('raffle-data.json', 'utf-8'))
   return raffleData
