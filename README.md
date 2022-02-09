@@ -11,14 +11,15 @@ You will also need to generate an `OAUTH_TOKEN` **while logged in as that bot us
 For the Python implementation, you will need to register a new application from the [Twitch Developer Console](https://dev.twitch.tv/console) to acquire a `CLIENT_ID`. You may log into the developer console using your main Twitch account.
 
 ```bash
-$ git clone https://github.com/NoodleOfDeath/LoyaltyBot
-Cloning into 'LoyaltyBot'...
+$ git clone https://github.com/NoodleOfDeath/TwitchLoyaltyBot
+Cloning into 'TwitchLoyaltyBot'...
 remote: Enumerating objects: 43, done.
 remote: Counting objects: 100% (43/43), done.
 remote: Compressing objects: 100% (30/30), done.
 remote: Total 43 (delta 10), reused 42 (delta 9), pack-reused 0
 Receiving objects: 100% (43/43), 16.71 KiB | 1.52 MiB/s, done.
 Resolving deltas: 100% (10/10), done.
+$ cd TwitchLoyaltyBot
 $ sed -i '' 's/oauth_token/your_oauth_token/' src/*/.env
 $ sed -i '' 's/client_id/your_client_id/' src/*/.env
 $ sed -i '' 's/bot_username/your_bot_username/' src/*/.env
